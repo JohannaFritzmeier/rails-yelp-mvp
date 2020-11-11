@@ -1,0 +1,11 @@
+<h2>Create a new Restaurant!</h2>
+
+<%= form_for (@restaurant) do |f| %>
+  <%= f.text_field :name, placeholder: "Name" %>
+  <%= f.text_field :address, placeholder: "Address" %>
+  <%=  f.text_field :phone_number, placeholder: "Phone Number" %>
+  <%= f.text_field :category, placeholder: "Category" %>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to "Back", restaurants_path %>
